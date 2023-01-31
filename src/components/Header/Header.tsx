@@ -7,7 +7,7 @@ import logo from "../../assets/icons/vector.png";
 export const Header = () => {
   return (
     <header>
-      <header className='header__content container'>
+      <div className='header__content container'>
        <img src={logo} alt='logo' className='header__logo'></img>
         <nav className='header__nav'>
           <a href=''className='header__nav-link'>Features</a>
@@ -15,7 +15,7 @@ export const Header = () => {
           <a href=''className='header__nav-link'>Stories</a>
         </nav>
         <button className='header__button'>Download for free</button>
-      </header>
+      </div>
     </header>
   )
 }
