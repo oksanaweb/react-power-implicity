@@ -1,8 +1,6 @@
 import React from 'react'
 import "./styles.scss"
-import logo from "../../assets/icons/vector.png";
-
-
+import logo from "../../assets/icons/logo.png";
 
 export const Header = () => {
   return (
