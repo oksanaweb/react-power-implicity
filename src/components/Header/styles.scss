@@ -1,53 +1,69 @@
-.header__content {
+.header {
+        
+ &__content {
+   max-width: 1410px;
+   margin: 0 auto;
+   padding: 32px 32px;
    display: grid;
-   grid-template-columns: 330px 1fr 380px;
+   grid-template-columns: repeat(3, 1fr);
    place-items: center;
    @media (max-width:1060px) {grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));} 
    @media (max-width:900px) {grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));}
    @media (max-width:500px) {grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));}
-   @media (max-width:400px) {grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));}
-}
+   @media (max-width:400px) {grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));}}
 
-.container {
-    max-width: 1410px;
-    margin: 0 auto;
-    height: 200px;
-}
+   &__button {
+    justify-self: end;
+    padding: 16px 24px;
+    background-color:#E1E1E1;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 30px;
+    color: #24282E;   
+    cursor: pointer;
+    @media (max-width: 900px){justify-self:center;
+    margin-top: 30px;}
+       
+  }
 
-.header__nav {
-    @media (max-width:500px) {display: grid;
+   &__nav-link {
+    justify-self: center;
+    margin-right: 50px;   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; 
+    color:#A0A3A7;
+      }
+
+   &__logo {
+    justify-self:start;
+    width: 33px;
+    height: 43px;
+    @media (max-width: 900px){justify-self:center;
+    margin-bottom: 30px;}
+    @media (max-width: 900px){margin-right: 30px;}
+   }
+ 
+   &__nav{
+    margin-left: 60px;
+    @media (max-width:500px) {
+        display: grid;
         grid-template-columns: auto;
         justify-self:center;
         transform: translate(-20px);
         grid-gap: 10px;
     }
+   } 
 }
 
-.header__nav-link {
-    margin-left: 50px;
-    font-family: Montserrat;
-    font-size: 14px;
-    color:#A0A3A7;
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 16px;    
-}
 
-.header__button {
-    width: 150px;
-    height: 30px;
-    background-color:#E1E1E1;
-    border: none;
-    border-radius: 30px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    cursor: pointer;   
-}
 
-.header__logo {
-    width: 33px;
-    height: 43px;
-}
+
+
+
+
+
+
+
 
