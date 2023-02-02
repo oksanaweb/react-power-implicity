@@ -2,7 +2,6 @@ import React from 'react'
 import { SlideItem } from '../SlideItem/SlideItem';
 import './styles.scss';
 
-
 export const Slider = () => {
   return (
     <div className='slider'>
