@@ -1,22 +1,30 @@
-div, header, nav, ul, a, img, li, button, input {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+div,
+header,
+nav,
+ul,
+a,
+img,
+li,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Raleway";
+  font-family: "Raleway";
 }
 
 button {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 a {
-    text-decoration: none;
-    font-family: inherit;
+  text-decoration: none;
+  font-family: inherit;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }

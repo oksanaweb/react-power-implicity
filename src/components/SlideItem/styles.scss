@@ -1,64 +1,55 @@
 .slider {
+  &__item {
+    margin: 250 auto 250;
+  }
 
-&__item {
-    margin: 250 auto 250;  
-}
-
-&__item-content { 
-    max-width: 600px;    
-    @media (max-width:640px) {max-width: 450px;} 
-    @media (max-width:450px) {max-width: 250px;} 
+  &__item-content {
+    max-width: 600px;
+    @media (max-width: 640px) {
+      max-width: 450px;
     }
+    @media (max-width: 450px) {
+      max-width: 250px;
+    }
+  }
 
-&__title {
+  &__title {
     font-size: 72px;
-    font-weight: 300;    
+    font-weight: 300;
     line-height: 83px;
     text-align: center;
-    color: #F2F4F7;
-    @media (max-width:640px) {font-size: 70px;} 
-    @media (max-width:500px) {font-size: 35px;}
+    color: #f2f4f7;
+    @media (max-width: 640px) {
+      font-size: 70px;
     }
+    @media (max-width: 500px) {
+      font-size: 35px;
+    }
+  }
 
-&__subtitle {
+  &__subtitle {
     margin-bottom: 80px;
     font-size: 18px;
-    font-weight: 300;    
+    font-weight: 300;
     line-height: 21px;
-    text-align: center;    
-    color:#F2F4F7;    
-    @media (max-width:550px) {font-size: 12px;} 
-        }
+    text-align: center;
+    color: #f2f4f7;
+    @media (max-width: 550px) {
+      font-size: 12px;
+    }
+  }
 
- &__button {
+  &__button {
     display: block;
     padding: 15px 90px;
     margin: 0 auto;
     border: 2px solid transparent;
-    border-image-source:linear-gradient(135deg, #fc3f5f, #7d61ff);
-    border-image-slice: 1;  
-    font-size: 18px;    
+    border-image-source: linear-gradient(135deg, #fc3f5f, #7d61ff);
+    border-image-slice: 1;
+    font-size: 18px;
     background-clip: text;
     color: transparent;
     background-image: linear-gradient(135deg, #fc3f5f, #7d61ff);
     cursor: pointer;
-    }    
-
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
